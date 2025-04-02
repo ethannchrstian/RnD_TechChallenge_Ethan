@@ -1,0 +1,123 @@
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    
+    /* Form styling dengan border*/
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+    }
+    
+    /* Style heading */
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    /* Setiap field dalam form */
+    .form-group {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    
+    /* Style untuk labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    
+    /* Style untuk text dan email input */
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      outline: none;
+      border-color: #4CAF50;
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    }
+    
+    /* Radio button group styling */
+    .radio-group {
+      margin-top: 8px;
+    }
+    
+    /* Styling untuk label radio buttonnya */
+    .radio-label {
+      margin-right: 15px;
+      font-weight: normal;
+      display: inline-block;
+    }
+    
+    /* Error message */
+    .error {
+      color: #d9534f;
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+    }
+    
+    /* Success message */
+    .success {
+      color: #5cb85c;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+    /* Submit button */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+    
+    /* Ketika button di hover */
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    /* Container untuk form status message */
+    .form-status {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    /* Ketika success */
+    .form-status.success {
+      background-color: #d4edda;
+      border: 1px solid #c3e6cb;
+      color: #155724;
+    }
+    
+    /* Ketika Error */
+    .form-status.error {
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      color: #721c24;
+    }

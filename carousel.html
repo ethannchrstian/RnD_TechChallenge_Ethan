@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel RnD</title>
+    <link rel="stylesheet" href="carouselStyles.css">
+
+</head>
+<body>
+
+<!-- Div utama -->
+<div class="imageContainer">
+
+    <!-- div untuk imagesnya  -->
+	<div class="slides">
+        <!-- disini image 1 menjadi image aktif pertama ketika website load -->
+		<img src="image-1.jpg" class="active">
+		<img src="image-2.jpg">
+		<img src="image-3.jpg">
+		<img src="image-4.jpg">
+		<img src="image-5.jpg">
+	</div>
+
+    <!-- Div untuk button navigasi, next dan prev -->
+	<div class="buttons">
+        <!-- left arrow button untuk prev -->
+		<span class="prev">&#10094;</span>
+        <!-- right arrow untuk next -->
+		<span class="next">&#10095;</span>
+	</div>
+
+    <!-- Div untuk button indikatornya (yg mana aktif, etc) -->
+	<div class="dotsContainer">
+        <!-- kalau buttonnya diklik, menjadi active image/yg dishow -->
+		<div class="dot active" attr='0' onclick="switchImage(this)"></div>
+		<div class="dot" attr='1' onclick="switchImage(this)"></div>
+		<div class="dot" attr='2' onclick="switchImage(this)"></div>
+		<div class="dot" attr='3' onclick="switchImage(this)"></div>
+		<div class="dot" attr='4' onclick="switchImage(this)"></div>
+	</div>
+</div>
+
+<!-- Code Javascriptnya -->
+<script src="carouselScript.js"></script>
+
+</body>
+</html>

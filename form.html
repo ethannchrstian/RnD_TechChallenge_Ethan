@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Tech Challenge</title>
+  <link rel="stylesheet" href="formStyles.css">
+
+</head>
+<body>
+  <h1>BNCC RnD Member Registration</h1>
+  
+  <!-- Formnya -->
+  <form id="registrationForm">
+    <!-- Nama user -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name">
+      <span id="nameError" class="error"></span>
+    </div>
+    
+    <!-- NIM user -->
+    <div class="form-group">
+      <label for="nim">NIM (Nomor Induk Mahasiswa):</label>
+      <input type="text" id="nim" placeholder="Enter your 10-digit NIM">
+      <span id="nimError" class="error"></span>
+    </div>
+    
+    <!-- Email user -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email address">
+      <span id="emailError" class="error"></span>
+    </div>
+    
+    <!-- Gender user dengan button radio -->
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" class="radio-label">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" class="radio-label">Female</label>
+      </div>
+      <span id="genderError" class="error"></span>
+    </div>
+    
+    <!-- Submit button -->
+    <button type="submit">Submit Registration</button>
+  </form>
+  
+  <!-- Container untuk status form -->
+  <div id="formStatus" class="form-status" style="display: none;"></div>
+
+  <!-- Script form -->
+  <script src="formScript.js"></script>
+
+</body>
+</html>
